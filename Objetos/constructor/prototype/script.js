@@ -1,26 +1,32 @@
-/*function Pessoa(nome, idade) {
-    this.nome = nome;
+function Pessoa(nome, sobrenome, idade) {
+    this.nome = nome; 
+    this.sobrenome = sobrenome
     this.idade = idade;
 }
 
-
-Pessoa.prototype.andar = function() {
-    return  this.nome + ' andou';
+Pessoa.prototype.nomeCompleto = function() {
+    return`${this.nome} ${this.sobrenome}`
 }
 
-const andre = new Pessoa('Andre', 28);
+Object.getOwnPropertyNames(NodeList.prototype)
+Object.getOwnPropertyNames(HTMLAllCollection.prototype)
+Object.getOwnPropertyNames(document.prototype)
 
-console.log(Pessoa.prototype);
-console.log(andre.prototype);
-*/
 
-const pais = 'Brasil';
-const cidade = new String('Rio');
 
-const listaAnimais = ['Cachorro', 'Gato', 'Cavalo']
+const luiz = new Pessoa('Luiz', 'Henrique', 22);
 
-const lista = document.querySelectorAll('li')
+//////
 
-//transforma em uma array 
-const listaArray1 = Array.prototype.slice.call(lista);
-const listaArray2 = Array.from(lista);
+const li = document.querySelectorAll('li');
+
+li; //HTMLLIElement
+li.click; //function
+li.innerText; //string
+li.value; //number
+li.hidden; //boolean
+li.offsetLeft; //number
+li.click(); //undefined
+
+
+li.hidden.constructor.name; //string
