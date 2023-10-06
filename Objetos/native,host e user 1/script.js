@@ -14,7 +14,7 @@ Object
 String 
 Array
 Number
-function;
+//function;
 
 //liste 5 objetos browser
 window
