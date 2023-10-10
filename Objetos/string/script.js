@@ -8,4 +8,13 @@ const transacao2 = 'Taxa de camisas';
 
 console.log(transacao1.slice(-5));
 
-console.log(transacao2.indexOf('ta'));
+console.log(transacao2.indexOf('na'));
+
+
+const preco = 'R$ 99,00';
+
+const listaPrecos = ['R$ 99', 'R$ 199', 'R$ 12000'];
+
+listaPrecos.forEach((item) => {
+    console.log(item.padStart(10, '-'));
+})
